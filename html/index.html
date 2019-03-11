@@ -10,25 +10,84 @@
 </head>
 
 <body>
-  <div class="header-container">
-    <header id="header">
-      <img src="../images/companyLogo.png" alt="companyLogo">
-      <h1> Nashan Supplement Store </h1>
-      <nav id="nav-bar">
-        <ul>
-          <li class="nav-link"> <a href="#"> Home </a> </li>
-          <li class="nav-link"> <a href="#"> About </a> </li>
-          <li class="nav-link"> <a href="#"> Contact </a> </li>
-        </ul>
+  <div class="page-container">
+    <div class="header-container">
+      <header id="header">
+        <img src="../images/companyLogo.png" alt="companyLogo">
+        <h1> Nashan Supplement Store </h1>
+        <nav id="nav-bar">
+          <ul>
+            <li class="nav-link"> <a href="#"> Home </a> </li>
+            <li class="nav-link"> <a href="#product-list"> About </a> </li>
+            <li class="nav-link"> <a href="#contact"> Contact </a> </li>
+          </ul>
 
-      </nav>
-    </header>
+        </nav>
+      </header>
+
+    </div>
+    <section id="form-section">
+      <h2> Subscribe to stay updated with our latest prices </h2>
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <input name="email" id="email" type="email" placeholder="Enter your email address" required />
+        <input id="submit" type="submit" value="Get Started" class="btn"></input>
+      </form>
+    </section>
+
+    <main>
+      <section id="product-info">
+        <div class="product-info">
+          <img src="../images/picasa-logo.svg" alt="picasaLogo">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Amet consectetur
+            adipiscing elit pellentesque habitant morbi. Duis ut diam quam nulla porttitor massa id neque.</p>
+        </div>
+        <div class="product-info">
+          <img src="../images/picasa-logo.svg" alt="picasaLogo">
+          <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+            et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Amet consectetur
+            adipiscing elit pellentesque habitant morbi. Duis ut diam quam nulla porttitor massa id neque.</p>
+        </div>
+
+      </section>
+      <section id="video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/jnLSYfObARA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+    </main>
+    <section class="product-list" id="product-list">
+      <div class="product">
+        <h2> Product </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Amet consectetur
+          adipiscing elit pellentesque habitant morbi. Duis ut diam quam nulla porttitor massa id neque.</p>
+        <button type="button" name="button"> Select </button>
+      </div>
+      <div class="product">
+        <h2> Product </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Amet consectetur
+          adipiscing elit pellentesque habitant morbi. Duis ut diam quam nulla porttitor massa id neque.</p>
+        <button type="button" name="button"> Select </button>
+      </div>
+      <div class="product">
+        <h2> Product </h2>
+        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+          et dolore magna aliqua. Semper risus in hendrerit gravida rutrum quisque non tellus. Amet consectetur
+          adipiscing elit pellentesque habitant morbi. Duis ut diam quam nulla porttitor massa id neque.</p>
+        <button type="button" name="button"> Select </button>
+      </div>
+
+    </section>
+    <footer id="contact">
+      <p>Contact :</p>
+
+      <address>
+        <a href="mailto:contact@gmail.com">contact@gmail.com</a>
+        <a href="tel:+1111111111">+1111111111</a>
+      </address>
+    </footer>
 
   </div>
-  <form id="form" action="index.html" method="post">
-    <input type="email" name="email" value="email" placeholder="Enter your email">
-  </form>
-
 </body>
 
 </html>

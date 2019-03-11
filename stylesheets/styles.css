@@ -1,12 +1,16 @@
 * {
   box-sizing: border-box;
   font-family: 'PT Sans Narrow', sans-serif;
+
+}
+body{
+  background-color: #E6E6E6;
 }
 
 .header-container{
   position: fixed;
   width: 100%;
-  background-color: pink;
+  background-color: #F8ECE0;
   top: 0;
   left: 0;
 }
@@ -16,10 +20,31 @@ img{
   width: 50px;
 }
 
-#header,ul{
+#header,ul,footer{
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
 
+}
+
+@media screen and (max-width: 992px) {
+  #header,ul,footer{
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+  }
+
+  header img {
+    visibility: hidden;
+  }
+}
+
+
+.page-container,#form,.product {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 ul{
@@ -29,7 +54,19 @@ ul{
 
 h1{
   width: 500px;
+  max-width: 500px;
   margin: 0 0 0 20px;
+}
+
+h2{
+  font-style: italic;
+}
+
+.product h2{
+  font-style: normal;
+  background-color: #F5D0A9;
+  width: 100%;
+  text-align: center;
 }
 
 nav{
@@ -42,10 +79,83 @@ a{
   color: black;
 }
 
+a:hover{
+  color: white;
+}
+
 li{
   list-style-type: none;
 }
 
-form{
-  position: relative;
+#form-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0 100px 0;
+}
+
+input[type="email"] {
+    max-width: 300px;
+    width: 250px;
+  }
+
+  input[type="submit"] {
+    max-width: 150px;
+    width: 100%;
+    height: 30px;
+    margin: 15px 0;
+    border: 0;
+    background-color: #F8ECE0;
+    font-size: 20px;
+
+}
+
+input[type="submit"]:hover{
+  background-color: black;
+  color: white;
+}
+
+main, .product-list{
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.product-info{
+  display: flex;
+  flex-direction: row;
+  width : 500px;
+  padding-right: 30px;
+  text-align: center;
+}
+
+.product-info img{
+  width: 15px;
+  height: 15px;
+  margin: 20px 20px 0 0;
+}
+
+.product {
+  padding: 0 20px 20px 20px;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+  margin: 100px 10px 0 0;
+}
+
+footer{
+  margin-top: 100px;
+}
+
+address a{
+  padding: 0 20px 0 20px;
+
+}
+
+address{
+  margin-top: 8px;
 }
